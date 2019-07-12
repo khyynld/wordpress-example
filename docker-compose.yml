@@ -38,7 +38,7 @@ services:
   # mysql
   mysql:
     image: mysql:5.7.21
-    container_name: "mysql-wordpress"
+    container_name: "mysql-wordpress-example"
     volumes_from:
       - mysql-data
     # ports:
@@ -56,7 +56,7 @@ services:
   # mysql data
   mysql-data:
     image: mysql:5.7.21
-    container_name: "mysql-data-wordpress"
+    container_name: "mysql-data-wordpress-example"
     volumes:
       - ./db/mysql:/var/lib/mysql
     command: "true"
@@ -64,7 +64,7 @@ services:
   # phpmyadmin
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: "phpmyadmin-wordpress"
+    container_name: "phpmyadmin-wordpress-example"
     ports:
       - 8824:80
     links:
