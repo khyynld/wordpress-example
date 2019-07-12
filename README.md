@@ -1,2 +1,0 @@
-# wordpress-example
-docker wordpress
