@@ -32,8 +32,3 @@
 		Require all granted
 	</IfModule>
 </FilesMatch>
-
-php_value post_max_size 256M
-php_value memory_limit 512M
-php_value max_input_time 180
-php_value max_execution_time 180
