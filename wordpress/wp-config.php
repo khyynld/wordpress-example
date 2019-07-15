@@ -57,9 +57,9 @@ $table_prefix  =  getenv('TABLE_PREFIX').'_';
 define('WP_DEBUG', false);
 
 // Config SSl
-define( 'FORCE_SSL_ADMIN', true );
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)  
-    $_SERVER['HTTPS']='on';
+// define( 'FORCE_SSL_ADMIN', true );
+// if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)  
+//     $_SERVER['HTTPS']='on';
 
 /* That's all, stop editing! Happy blogging. */
 
