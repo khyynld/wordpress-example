@@ -55,6 +55,7 @@ $table_prefix  =  getenv('TABLE_PREFIX').'_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+@ini_set('upload_max_size' , '256M' );
 
 // Config SSl
 // define( 'FORCE_SSL_ADMIN', true );
